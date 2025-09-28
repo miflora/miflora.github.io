@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.9, user-scalable=yes">
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <title>MiFlora</title>
+
+  <style>
+    html, body {
+      height: 100%;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    .footer {
+      background-color: #225E37;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    .user-img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="position-relative w-100">
+    <img src="Header image parco sempione v2.jpg" alt="Parco" class="img-fluid w-100 d-block" style="height: 40vh; object-fit: cover;">
+    <div class="position-absolute top-50 start-50 translate-middle text-center text-white px-3">
+      <h1 class="display-4 fw-bold text-shadow">miFlora</h1>
+      <p class="fs-4 text-shadow">Risorse Floristiche a Milano</p>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="w-100 text-white text-center py-3" style="background-color: #080052;">
+    <h2 class="m-0"></h2>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <div class="container my-4">
+      <h1 class="mb-4">In fase di realizzazione</h1>
+
+      <!-- Tabella Utenti -->
+      <table class="table table-hover align-middle">
+        <thead class="table-light">
+          <tr>
+            <th>Utente</th>
+            <th>Creato</th>
+            <th>Stato</th>
+            <th>Email</th>
+            <th>Azioni</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="d-flex align-items-center">
+                <img src="avatar1.jpg" alt="Avatar" class="rounded-circle me-3 user-img">
+                <div>
+                  <strong>Mario Rossi</strong><br>
+                  <small class="text-muted">Admin</small>
+                </div>
+              </div>
+            </td>
+            <td>12/09/2025</td>
+            <td><span class="badge bg-success">Attivo</span></td>
+            <td>mario.rossi@example.com</td>
+            <td>
+              <button class="btn btn-sm btn-outline-primary me-1"><i class="bi bi-pencil"></i></button>
+              <button class="btn btn-sm btn-outline-danger me-1"><i class="bi bi-trash"></i></button>
+              <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-eye"></i></button>
+            </td>
+          </tr>
+          <!-- Altri utenti -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <div class="footer">
+    (C) Furio Coltri, Gabriele Galasso
+  </div>
+
+  <!-- Script dinamico -->
+  <script>
+    window.onload = function () {
+      const base = "https://script.google.com/macros/s/AKfycbwiCuTgu6RJB1-V4j4YF1Sh0xJK0aQXUvhoLK4RjeU_s4OZMVB79T_Gg2BhJwFjoQGddA/exec";
+      document.getElementById('quer')?.setAttribute('href', base + "?page=queryadv");
+      document.getElementById('erbarioquerlib')?.setAttribute('href', base + "?page=erbarioqueryadv");
+    };
+  </script>
+
+</body>
+</html>

@@ -12,6 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 
  <title>MiFlora</title>
@@ -61,8 +62,11 @@
 
   <div class="col-md-8">
     <h4 class="fw-bold text-center text-md-start">Informazioni Floristiche su Milano</h4>
-    <p>Descrizione del primo riquadro. Puoi inserire testo, link, o icone qui.</p>
+    <p>L'applicazione aggrega numerose sorgenti relative a dati floristici a Milano: Osservazioni di iNaturalist, dati provenienti da GBIF, informazioni degli alberi nell'area comunale, campioni d'erbario e osservazioni dirette del personale e volontari del Museo . </p>
+<a id="quer" target="_new" href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Accedi</a>
   </div>
+
+
 </div>
 
 
@@ -78,8 +82,10 @@
 
   <div class="col-md-8">
     <h4 class="fw-bold text-center text-md-start">L'erbario del Museo di Storia Naturale di Milano</h4>
-    <p>Descrizione del primo riquadro. Puoi inserire testo, link, o icone qui.</p>
+    <p>L'erbario del Museo, nato a metà dell'800, custodisce circa 40.000 campioni di piante provenienti da tutto il mondo ed è a tutt'oggi attivo e riceve nuovi contributi. Potete accedere alla versione digitale che consente di ricercare i campioni, vederne l'ubicazione geografica e gli altri dettagli e se è già stato scansionato si può visualizzare la foto.</p>
+<a id="erbarioquerlib" target="_new" href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Accedi</a>
   </div>
+
 </div>
 
 
@@ -96,7 +102,9 @@
 
   <div class="col-md-8">
     <h4 class="fw-bold text-center text-md-start">Altre risorse</h4>
-    <p>Descrizione del primo riquadro. Puoi inserire testo, link, o icone qui.</p>
+    <p>In questa sezione sono raccolte altre risorse utili relative alla Flora.</p>
+<a id="quer" target="_new" href="altre.html" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Consulta</a>
+
   </div>
 </div>
 
@@ -104,8 +112,22 @@
 
 <div class="w-100 text-white text-center py-3" style="background-color: #225E37;">
   <h2 class="m-0"></h2>
+  (C) Furio Coltri, Gabriele Galasso, 2022-2025
 </div>
 
+ <script>
+      window.onload = load;
+      function load()
+      {
+      var scriptUrl="https://script.google.com/macros/s/AKfycbwiCuTgu6RJB1-V4j4YF1Sh0xJK0aQXUvhoLK4RjeU_s4OZMVB79T_Gg2BhJwFjoQGddA/exec";
+
+      var scriptUrlQuery=scriptUrl+"?page=queryadv";
+      var scriptUrlQueryLibro=scriptUrl+"?page=querylibro";
+      var scriptUrlQueryErbario=scriptUrl+"?page=erbarioqueryadv";
+      document.getElementById('quer').setAttribute('href', scriptUrlQuery); 
+      document.getElementById('erbarioquerlib').setAttribute('href', scriptUrlQueryErbario); 
+      } 
+    </script>
 
 </body>
 </html>
