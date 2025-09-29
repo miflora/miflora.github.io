@@ -19,7 +19,8 @@
   <style>
     html, body {
       height: 100%;
-      font-family: 'Inter', sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+
     }
 
     body {
@@ -43,6 +44,10 @@
       height: 40px;
       object-fit: cover;
     }
+
+    .table td, .table th {
+      vertical-align: middle;
+    }
   </style>
 </head>
 
@@ -64,41 +69,114 @@
 
   <!-- Main Content -->
   <main>
-    <div class="container my-4">
-      <h1 class="mb-4">In fase di realizzazione</h1>
+    <div class="container my-5">
+      <h3 class="mb-4">Alcune risorse di botanica relative al comune di Milano</h3>
 
-      <!-- Tabella Utenti -->
+      <!-- Tabella Area / Descrizione / Link -->
       <table class="table table-hover align-middle">
         <thead class="table-light">
           <tr>
-            <th>Utente</th>
-            <th>Creato</th>
-            <th>Stato</th>
-            <th>Email</th>
-            <th>Azioni</th>
+            <th style="width: 10%;">Area</th>
+            <th style="width: 70%;">Descrizione</th>
+            <th style="width: 20%;">Link</th>
           </tr>
         </thead>
         <tbody>
           <tr>
+            <td class="text-center">
+              <i class="bi bi-book fs-4 text-info"></i><br>
+                </td>
             <td>
-              <div class="d-flex align-items-center">
-                <img src="avatar1.jpg" alt="Avatar" class="rounded-circle me-3 user-img">
-                <div>
-                  <strong>Mario Rossi</strong><br>
-                  <small class="text-muted">Admin</small>
-                </div>
-              </div>
+              La flora spontanea della città di Milano alle soglie del terzo millennio (G.Galasso, E. Banfi)
             </td>
-            <td>12/09/2025</td>
-            <td><span class="badge bg-success">Attivo</span></td>
-            <td>mario.rossi@example.com</td>
-            <td>
-              <button class="btn btn-sm btn-outline-primary me-1"><i class="bi bi-pencil"></i></button>
-              <button class="btn btn-sm btn-outline-danger me-1"><i class="bi bi-trash"></i></button>
-              <button class="btn btn-sm btn-outline-secondary"><i class="bi bi-eye"></i></button>
+            <td class="text-center">
+              <a href="https://example.com/erbario" target="_blank" class="btn btn-sm btn-outline-success">
+                <i class="bi bi-link-45deg"></i> Apri
+              </a>
             </td>
           </tr>
-          <!-- Altri utenti -->
+
+          <tr>
+            <td class="text-center">
+              <i class="bi bi-geo-alt fs-4 text-info"></i><br>
+            </td>
+            <td>
+             Museo Storia Naturale di Milano
+            </td>
+            <td class="text-center">
+              <a href="https://maps.app.goo.gl/Gm1UvqaJJSvciJhA7" target="_blank" class="btn btn-sm btn-outline-success">
+                <i class="bi bi-link-45deg"></i> Apri
+              </a>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="text-center">
+              <i class="bi bi-geo-alt fs-4 text-info"></i><br>
+            </td>
+            <td>
+             Orto Botanico Città Studi
+            </td>
+            <td class="text-center">
+              <a href="https://maps.app.goo.gl/DyyfmkN4N3nBXHAb6" target="_blank" class="btn btn-sm btn-outline-success">
+                <i class="bi bi-link-45deg"></i> Apri
+              </a>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="text-center">
+              <i class="bi bi-geo-alt fs-4 text-info"></i><br>
+            </td>
+            <td>
+             Museo Botanico Aurelia Josz
+            </td>
+            <td class="text-center">
+              <a href="https://maps.app.goo.gl/iFTiXkci7GNZWB9FA" target="_blank" class="btn btn-sm btn-outline-success">
+                <i class="bi bi-link-45deg"></i> Apri
+              </a>
+            </td>
+          </tr>
+
+
+
+
+
+
+          <tr>
+            <td class="text-center">
+              <i class="bi bi-share fs-4 text-info"></i><br>
+            </td>
+            <td>
+              Portale della Flora d'Italia
+            </td>
+            <td class="text-center">
+              <a href="https://dryades.units.it/floritaly/" target="_blank" class="btn btn-sm btn-outline-success">
+                <i class="bi bi-link-45deg"></i> Apri
+              </a>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td class="text-center">
+              <i class="bi bi-share fs-4 text-info"></i><br>
+            </td>
+            <td>
+              iNaturalist
+            </td>
+            <td class="text-center">
+              <a href="https://inaturalist.org" target="_blank" class="btn btn-sm btn-outline-success">
+                <i class="bi bi-link-45deg"></i> Apri
+              </a>
+            </td>
+          </tr>
+
+
+
+
+
         </tbody>
       </table>
     </div>
