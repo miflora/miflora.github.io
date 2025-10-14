@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.9, user-scalable=yes">
+<title>Erbario urbano di Milano – miFlora</title>
+<meta name="description" content="Scopri l'erbario di Milano con miFlora: una mappa interattiva delle piante spontanee e ornamentali della città.">
+
+
+  <!-- og:Open Graph -->
+
+  <meta property="og:site_name" content="miFlora">
+  <meta property="og:title" content="miFlora - Flora ed Erbario a Milano">
+  <meta property="og:description" content="miFlora - La flora a milano - Museo Storia Naturale di Milano - Erbario e informazioni Floristiche">
+  <meta property="og:image" content="https://miflora.github.io/miFloraog.png">
+  <meta property="og:url" content="https://miflora.github.io/index.html">
+  <meta property="og:type" content="website">
+
+
+
+<!-- fonti esterne -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- titolo -->
+
+ <title>MiFlora - Il progetto </title>
+
+<style>
+  body {
+    font-family: "Segoe UI Light", Arial, sans-serif;
+  }
+.footer {
+      background-color: #225E37;
+      color: white;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+</style>
+
+
+
+</head>
+
+<body>
+
+<!-- Intestazione con foto -->
+
+<div class="position-relative w-100">
+  <img src="Header image parco sempione v2.jpg" alt="Parco" class="img-fluid w-100 d-block" style="height: 40vh; object-fit: cover;">
+  
+  <div class="position-absolute top-50 start-50 translate-middle text-center text-white px-3">
+    <h1 class="display-4 fw-bold text-shadow">miFlora</h1>
+    <p class="fs-4 text-shadow">Risorse Floristiche a Milano</p>
+  </div>
+</div>
+
+<!-- Striscia blu -->
+
+
+<div class="w-100 text-white text-center py-3" style="background-color: #080052;">
+  <h2 class="m-0"></h2>
+  <a target="_blank" class="d-flex align-items-center" style="color: white; text-decoration: none;justify-content: center;" href="/"><i class="bi bi-house-door position-absolute end-0 me-3"> Home</i></a>
+</div>
+
+
+
+<div class="row mb-2"></div> 
+
+
+miFlora è un progetto indipendente nato a Milano, dedicato alla mappatura e alla valorizzazione della flora urbana. Un erbario digitale che unisce tecnologia, estetica e conoscenza botanica per raccontare il paesaggio vegetale della città.
+Crediamo che ogni foglia, fiore e radice abbia una storia da condividere. Per questo abbiamo creato una piattaforma aperta, accessibile e visivamente curata, dove chiunque può esplorare, contribuire e riscoprire il verde che ci circonda.
+Cosa facciamo
+- Mappiamo le specie spontanee e ornamentali presenti nei quartieri di Milano
+- Offriamo schede botaniche sintetiche e visivamente armoniche
+- Sviluppiamo strumenti modulari per visualizzare, filtrare e analizzare i dati
+- Collaboriamo con cittadini, botanici, artigiani e designer per rendere il progetto vivo e condiviso
+Perché Milano
+Milano è una città stratificata, veloce, ma sorprendentemente verde. Dai cortili nascosti ai viali alberati, dai giardini storici alle aiuole dimenticate: ogni angolo può diventare parte di un racconto botanico. miFlora nasce qui, ma guarda oltre.
+Il nostro approccio
+Minimalismo visivo, rigore tecnico, apertura metodologica. Ogni componente è pensato per essere riutilizzabile, esportabile e trasparente. Crediamo nell’autonomia dell’utente e nella bellezza dei dettagli.
+
+
+
+
+<div class="container my-4">
+
+
+  <!-- Riquadro 1 -->
+<div class="row align-items-center rounded-5 shadow-sm mb-4 p-3 mx-2" style="background-color: #e9ecef;">
+
+
+<div class="col-md-4  text-center mb-3 mb-md-0 ">
+  <img src="hub.jpg" alt="Foto 1" class="img-fluid rounded-3" style="max-height: 200px;">
+</div>
+
+
+
+  <div class="col-md-8">
+    <h4 class="fw-bold text-center text-md-start">Informazioni Floristiche su Milano</h4>
+    <p>L'applicazione aggrega numerose sorgenti relative a dati floristici a Milano: Osservazioni di iNaturalist, dati provenienti da GBIF, informazioni degli alberi nell'area comunale, campioni d'erbario e osservazioni dirette del personale e volontari del Museo . </p>
+<a id="quer" target="_new" href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Accedi</a>
+  </div>
+
+
+</div>
+
+
+  <!-- Riquadro 2 -->
+<div class="row align-items-center rounded-5 shadow-sm mb-4 p-3 mx-2" style="background-color: #e9ecef;">
+
+
+<div class="col-md-4  text-center mb-3 mb-md-0 ">
+  <img src="MSNM51722.jpg" alt="Foto 1" class="img-fluid rounded-3" style="max-height: 200px;">
+</div>
+
+
+
+  <div class="col-md-8">
+    <h4 class="fw-bold text-center text-md-start">L'erbario del Museo di Storia Naturale di Milano</h4>
+    <p>L'erbario del Museo, nato a metà dell'800, custodisce circa 40.000 campioni di piante provenienti da tutto il mondo ed è a tutt'oggi attivo e riceve nuovi contributi. Potete accedere alla versione digitale che consente di ricercare i campioni, vederne l'ubicazione geografica e gli altri dettagli e se è già stato scansionato si può visualizzare la foto.</p>
+<a id="erbarioquerlib" target="_new" href="#" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Accedi</a>
+  </div>
+
+</div>
+
+
+
+  <!-- Riquadro 3 -->
+<div class="row align-items-center rounded-5 shadow-sm mb-4 p-3 mx-2" style="background-color: #e9ecef;">
+
+
+<div class="col-md-4  text-center mb-3 mb-md-0 ">
+  <img src="altro.jpg" alt="Foto 1" class="img-fluid rounded-3" style="max-height: 200px;">
+</div>
+
+
+
+  <div class="col-md-8">
+    <h4 class="fw-bold text-center text-md-start">Altre risorse</h4>
+    <p>In questa sezione sono raccolte altre risorse utili relative alla Flora.</p>
+<a id="quer" target="_new" href="altre.html" class="btn btn-primary btn-sm active" role="button" aria-pressed="true">Consulta</a>
+
+  </div>
+</div>
+
+</div>
+
+
+
+  <!-- Footer -->
+<div class="footer d-flex justify-content-center position-relative">
+  <span class="text-center w-100">© Furio Coltri, Gabriele Galasso</span>
+ <a target="_blank" style="color: inherit; text-decoration: none;" href="https://script.google.com/macros/s/AKfycbzgp4FwPMqTKWDafOunOsoGfCU2hmvjL6DR7St61tVr/dev?page=home"> <i class="bi bi-code-square position-absolute end-0 me-3"></i></a>
+</div>
+
+  
+ <script>
+      window.onload = load;
+      function load()
+      {
+      var scriptUrl="https://script.google.com/macros/s/AKfycbwiCuTgu6RJB1-V4j4YF1Sh0xJK0aQXUvhoLK4RjeU_s4OZMVB79T_Gg2BhJwFjoQGddA/exec";
+      var scriptUrldev="https://script.google.com/macros/s/AKfycbzgp4FwPMqTKWDafOunOsoGfCU2hmvjL6DR7St61tVr/dev";
+
+      var scriptUrlQuery=scriptUrl+"?page=queryadv";
+      var scriptUrlQuerydev=scriptUrldev+"?page=queryadvplus";
+      var scriptUrlQueryLibro=scriptUrl+"?page=querylibro";
+      var scriptUrlQueryErbario=scriptUrl+"?page=erbarioqueryadv";
+      document.getElementById('quer').setAttribute('href', scriptUrlQuerydev); 
+      document.getElementById('erbarioquerlib').setAttribute('href', scriptUrlQueryErbario); 
+      } 
+    </script>
+
+</body>
+</html>
+
